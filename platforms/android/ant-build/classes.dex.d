@@ -1,0 +1,25 @@
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes.dex : \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/BuildConfig.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/CordovaApp.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/R$attr.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/R$drawable.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/R$string.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/R$xml.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/com/coolappz/CordovaMapsSample/R.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor$WhereOptions.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessorSdk5.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactInfoDTO.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$1.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$2.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$3.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$4.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener$1.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/Users/pahima/NetBeansProjects/projet_QCM/platforms/android/ant-build/dexedLibs/classes-c339f496c6f6b00fac0a5a8327182adc.jar \
