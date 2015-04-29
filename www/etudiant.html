@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <title>Page Etudiant</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="themes/IdroidQuizThemes.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <script type="text/javascript" src="js/libs/jquery-1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).bind("mobileinit", function() {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        <script type="text/javascript" src="js/libs/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/etudiant.js"></script>
+    </head>
+    <body> 
+       
+          <!--Profil-->
+        <div data-dom-cache="false"  data-role="page" id="profil">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="index.html#menuEtudiant" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+                
+            <div data-role="content" id="profilResultsList">
+               <ul data-role="listview" data-divider-theme="d" data-inset="true">
+                    <li><a href="#createAccount" rel="external" ><img src="css/images/icons-png/user-icon.png" alt="user icon" class="ui-li-icon">Créer compte</a></li>
+                    <li data-theme="c"><a href="#contacts"><img src="css/images/icons-png/question-icon.png" alt="question icon" class="ui-li-icon">Mon profil</a></li> 
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed" >
+                <h4>Copyright 2015</h4></div>
+        </div>
+          
+           <!--Répondre QCM-->
+        <div data-dom-cache="false"  data-role="page" id="repondreQcm">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="repondreQcmHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            
+            <div data-role="content" id="repondreQcmResultsList">
+               
+                <h2>Veuillez répondre au QCM suivant et surtout n'oubliez pas de valider à la fin pour voir votre score</h2> 
+                <h1>Thème du QCM :.......</h1> 
+
+                <form>
+                  1) Quel est le nom de <br>
+                  <input type="radio" name="radio-choice-1" id="radio-choice-4" value="Pierre"  />
+                   <label for="radio-choice-1">Pierre</label>
+                   <input type="radio" name="radio-choice-1" id="radio-choice-4" value="Toussaint"  />
+                   <label for="radio-choice-2">Toussaint</label>
+                    <br>
+                  2) Quel est l'age de <br>
+                 <input type="checkbox" name="radio-choice-1" id="radio-choice-4" value="Pierre"  />
+                   <label for="radio-choice-1">Pierre</label>
+                   <input type="checkbox" name="radio-choice-1" id="radio-choice-4" value="Toussaint"  />
+                   <label for="radio-choice-2">Toussaint</label>
+                   <br>
+                    <button type="button"><<</button>   <button type="button">>></button> 
+              </form>    
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed" >
+                <h4>Copyright 2015</h4></div>
+        </div>
+          
+            <!--TOP SCORE -->
+        <div data-dom-cache="false"  data-role="page" id="voirTopScore">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            <div data-role="content" id="voirTopScoreResultsList">
+                <h1>TOP SCORE :.......</h1> 
+                <h1>VOTRE TOP SCORE :.......</h1>  
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed" >
+                <h4>Copyright 2015</h4></div>
+        </div>
+                <!--About-->
+         <div data-dom-cache="false"  data-role="page" id="contacts">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            <div data-role="content" id="contactsResultsList">
+                About
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed" >
+                <h4>Copyright 2015</h4></div>
+        </div>
+                
+        
+    </body>
+</html>

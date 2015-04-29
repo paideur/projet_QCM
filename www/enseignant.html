@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <title>Page Enseignant</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="themes/IdroidQuizThemes.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <script type="text/javascript" src="js/libs/jquery-1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).bind("mobileinit", function() {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        <script type="text/javascript" src="js/libs/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/enseignant.js"></script>
+    </head> 
+    <body> 
+       
+            <!--Menu Etudiant-->
+        <div data-dom-cache="false"  data-role="page" id="menuEnseignant">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            
+            <div data-role="content" style="padding:1.8em;">
+               <ul data-role="listview" data-divider-theme="d" data-inset="true">
+                   
+                    <li><a href="#profil" rel="external" ><img src="css/images/icons-png/user-icon.png" alt="user icon" class="ui-li-icon">Profil</a></li>
+                    <li data-theme="c"><a href="#gererQuestion"><img src="css/images/icons-png/question-icon.png" alt="question icon" class="ui-li-icon">Gérer Questions</a></li> 
+                    <li><a href="#gererReponse" rel="external" ><img src="css/images/icons-png/reponse-icon.png" alt="reponse icon" class="ui-li-icon">Gérer Réponses</a></li>
+                    <li><a href="#soumettreQcm" rel="external" ><img src="css/images/icons-png/soumettre-icon.png" alt="soumettre icon" class="ui-li-icon">Soumettre QCM</a></li>
+                    <li data-theme="c"><a href="#contacts"><img  src="css/images/icons-png/about-icon.png" alt="about icon"  class="ui-li-icon">About </a></li>
+               </ul>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed"><h4>Menu Enseignant</h4></div>
+        </div>
+        
+     
+          <!--Profil-->
+        <div data-dom-cache="false"  data-role="page" id="profil">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            <div data-role="content" id="profilResultsList">
+               <ul data-role="listview" data-divider-theme="d" data-inset="true">
+                    <li><a href="#createAccount" rel="external" ><img src="css/images/icons-png/user-icon.png" alt="user icon" class="ui-li-icon">Créer compte</a></li>
+                    <li data-theme="c"><a href="#contacts"><img src="css/images/icons-png/question-icon.png" alt="question icon" class="ui-li-icon">Mon profil</a></li> 
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b" data-position="fixed"><h4>Profil</h4></div>
+        </div>
+                  <!--Show list of contacts-->
+         <div data-dom-cache="false"  data-role="page" id="contacts">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            <div data-role="content" id="contactsResultsList">
+
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed"><h4>Contacts</h4></div>
+        </div>
+        
+                  <!--Gerer Question-->
+        <div data-dom-cache="false"  data-role="page" id="gererQuestion">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            
+            <div data-role="content" id="gererQuestionResultsList">
+              <form>
+                Libelle:<br>
+                <TEXTAREA rows="3" name="libelle" placeholder="Entrez le libelle de la question">
+	        </TEXTAREA>
+                 <br>
+                 <h1>Ajouter un réponse:(a revoir)</h1>
+                 <h1>Reponse à la question</h1>
+                  <input type="text" name="titre" placeholder="Veuillez entrez le titre de la question" >
+                <br>
+
+                 Description :<br>
+                <TEXTAREA rows="3" name="libelle" placeholder="Entrez la description de la réponse">
+	        </TEXTAREA> <br>
+
+               
+                <button type="button">+</button>
+                 <button type="button">Enregistrer</button>   <button type="button">Annuler</button> 
+             </form> 
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed"><h4>Copyright 2015</h4></div>
+           </div>
+         
+         
+          <!--Gerer reponse-->
+        <div data-dom-cache="false"  data-role="page" id="gererReponse">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            
+            <div data-role="content" id="gererReponseResultsList">
+              <form>
+                <input type="text" name="titre" placeholder="Veuillez entrez le titre de la reponse" >
+                <br>
+                Description :<br>
+                <TEXTAREA rows="3" name="libelle" placeholder="Entrez la description de la réponse">
+	        </TEXTAREA> <br>
+                Question :<br>
+                    <select>
+                      <option>Q1</option>
+                      <option>Q2</option>
+                    </select>
+                <br>
+                
+              
+              <button type="button">Enregistrer</button>   <button type="button">Annuler</button> 
+             </form> 
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed"><h4>Copyright 2015</h4></div>
+           </div>
+        
+          
+             <!-- Soumettre qcm-->
+        <div data-dom-cache="false"  data-role="page" id="soumettreQcm">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h1 id="profilHeader">Gérer Profil</h1>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            
+            <div data-role="content" id="soumettreQcmResultsList">
+              <form>
+                  Libelle QCM: <br>
+                <input type="text" name="libelle" placeholder="Veuillez entrez le libelle du QCM" >
+                <br>
+                <h2>Selectionner les questions associées au questionnaire</h2>
+                Question1 :<br>
+                    <select>
+                      <option>Choix Question</option>
+                      <option>Q2</option>
+                    </select>
+                <br>
+                Question2 :<br>
+                    <select>
+                      <option>Choix Question</option>
+                      <option>Q2</option>
+                    </select>
+                <br>
+                Question3 :<br>
+                    <select>
+                      <option>Choix Question</option>
+                      <option>Q2</option>
+                    </select>
+                <br>
+                
+               <button type="button">+</button> 
+              <button type="button">Enregistrer</button>   <button type="button">Annuler</button> 
+             </form> 
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed"><h4>Copyright 2015</h4></div>
+           </div>
+    </body>
+</html>

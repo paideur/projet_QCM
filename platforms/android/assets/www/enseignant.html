@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <title>Page Enseignant</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="themes/idroidquizTheme.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <script type="text/javascript" src="js/libs/jquery-1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).bind("mobileinit", function() {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        <script type="text/javascript" src="js/libs/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/enseignant.js"></script>
+        
+    </head> 
+    <body> 
+        <!-- Teacher Menu Implementation -->
+        <div data-dom-cache="false" data-role="page" id="myprofile">
+            <div data-role="header" data-theme="a">
+                <a data-role="button" data-rel="back" href="index.html#teachMenu" data-icon="arrow-l"
+                   data-iconpos="left" class="ui-btn-left"> Retour</a>
+                <h3 id="headerTeach"></h3>
+                <a data-role="button" href="index.html" data-icon="power" data-iconpos="left"
+                   class="ui-btn-right">Deco</a>
+            </div>
+            <div data-role="content" style="padding:1.4em;">
+                <label for="nomCpt" class="ui-hidden-accessible">Nom:</label>
+                <input name="nomCpt" id="nomCpt" placeholder="Entrer votre nom" value="" type="text">
+                <label for="prenomCpt" class="ui-hidden-accessible">Prénom:</label>
+                <input name="prenomCpt" id="prenomCpt" placeholder="Entrer votre prenom" value="" type="text">
+                <label for="loginCpt" class="ui-hidden-accessible">Username:</label>
+                <input name="loginCpt" id="loginCpt" placeholder="Nom d'utilisateur" value="" type="text">
+                <label for="mtpassCpt" class="ui-hidden-accessible">Mot de passe:</label>
+                <input name="mtpassCpt" id="mtpassCpt" placeholder="Entrer un mot de passe fort" value="" type="text">
+                <label for="cnfmtpassCpt" class="ui-hidden-accessible">Confirmer mot de passe:</label>
+                <input name="cnfmtpassCpt" id="cnfmtpassCpt" placeholder="Confirmer mot de passe" value="" type="text">
+                <a href="#accountCreationResult" data-role="button" id="btInscrire" class="ui-shadow ui-btn ui-corner-all" onclick="creerCompte()">S'inscrire</a>
+            </div>
+           
+            <div data-role="footer" data-theme="a" data-position="fixed" >
+                <h4>Copyright 2015</h4></div>
+        </div>
+        
+        
+    </body>
+</html>
